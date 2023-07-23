@@ -1,0 +1,15 @@
+ore certus_quartz
+tileType stone
+hardness 3.0
+resistance 5.0
+texture strata:blocks/appliedenergistics2/certus_quartz_ore
+convertsTo appliedenergistics2:material:0
+proxyOre appliedenergistics2:quartz_ore
+
+ore charged_certus_quartz
+tileType stone
+hardness 3.0
+resistance 5.0
+texture strata:blocks/appliedenergistics2/charged_certus_quartz_ore
+convertsTo appliedenergistics2:material:1
+proxyOre appliedenergistics2:charged_quartz_ore

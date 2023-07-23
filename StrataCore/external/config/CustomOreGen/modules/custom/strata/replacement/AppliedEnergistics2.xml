@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConfigSection>
+
+  <IfCondition condition=":=?blockExists('strata:certus_quartz_ore')">
+
+    <OptionChoice name="StrataReplaceCertusQuartzOre" default=":=false" displayState=":=if(?StrataReplaceAll, &quot;hidden&quot;, &quot;shown&quot;)" displayGroup="groupStrataReplacements">
+      <Description>Applied Energistics 2</Description>
+      <DisplayName>Replace certus quartz?</DisplayName>
+      <Choice value="true" displayValue="Yes" />
+      <Choice value="false" displayValue="No" />
+    </OptionChoice>
+
+    <IfCondition condition=":=?StrataActive &amp; ( ?StrataReplaceAll | ?StrataReplaceCertusQuartzOre )">
+      <Substitute name="CertuzQuartzToStrata" block="strata:certus_quartz_ore">
+        <ReplacesOre block="oreCertusQuartz" />
+      </Substitute>
+    </IfCondition>
+
+  </IfCondition>
+
+  <IfCondition condition=":=?blockExists('strata:charged_certus_quartz_ore')">
+
+    <OptionChoice name="StrataReplaceChargedCertusQuartzOre" default=":=false" displayState=":=if(?StrataReplaceAll, &quot;hidden&quot;, &quot;shown&quot;)" displayGroup="groupStrataReplacements">
+      <Description>Applied Energistics 2</Description>
+      <DisplayName>Replace charged certus quartz?</DisplayName>
+      <Choice value="true" displayValue="Yes" />
+      <Choice value="false" displayValue="No" />
+    </OptionChoice>
+
+    <IfCondition condition=":=?StrataActive &amp; ( ?StrataReplaceAll | ?StrataReplaceChargedCertusQuartzOre )">
+      <Substitute name="ChargedCertuzQuartzToStrata" block="strata:charged_certus_quartz_ore">
+        <Replaces block="oreChargedCertusQuartz" />
+      </Substitute>
+    </IfCondition>
+
+  </IfCondition>
+
+</ConfigSection>

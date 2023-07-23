@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IfModInstalled name="strata">
+
+  <!--
+  These files have options that significantly alter the world.
+  They define their own OptionDisplayGroup.
+  -->
+  <OptionalImport file='modules/custom/strata/redistribution/*.xml'/>
+
+  <OptionDisplayGroup name="groupStrataReplacements" displayName="Strata Replacements" displayState="shown">
+    <Description>Replacement options for blocks with a Strata equivalent.</Description>
+  </OptionDisplayGroup>
+
+  <OptionChoice name="StrataActive" default=":= dimension=&quot;overworld&quot;" displayState="hidden" displayGroup="groupStrataReplacements">
+    <Choice value="true" displayValue="On" />
+    <Choice value="false" displayValue="Off" />
+    <Comment>Whether Strata is active in the current dimension. By default, it is only active in the overworld. To toggle for a specific dimension, change this value in the CustomOreGen_Options.txt found in the dimension directory (preferably before visiting it).</Comment>
+  </OptionChoice>
+
+  <OptionChoice name="StrataReplaceAll" default="false" displayState="shown_dynamic" displayGroup="groupStrataReplacements">
+    <Description>A convenience option to set everything below (if anything) to true.</Description>
+    <DisplayName>§lReplace all?§r</DisplayName>
+    <Choice value="true" displayValue="Yes" />
+    <Choice value="false" displayValue="No" />
+  </OptionChoice>
+
+  <!--
+  These files specify N:~1 replacements that do not significantly alter the world.
+  They add to the above OptionDisplayGroup.
+  -->
+  <OptionalImport file='modules/custom/strata/replacement/*.xml'/>
+
+</IfModInstalled>

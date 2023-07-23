@@ -1,0 +1,6 @@
+Original and remixed "PerFabricaAdAstra" assets were, and are still, licensed under The Artistic License 2.0.
+
+Changes (where applicable) include, but may not be limited to:
+- Image resizing
+- Tiling and edge resynthesis
+- Colour and transparency adjustments

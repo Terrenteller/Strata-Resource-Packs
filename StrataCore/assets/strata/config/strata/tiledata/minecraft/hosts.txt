@@ -1,0 +1,178 @@
+# Hosts
+
+host minecraft:stone
+tileType stone
+texture minecraft:blocks/stone
+
+host minecraft:stone:1
+tileType stone
+texture minecraft:blocks/stone_granite
+
+host minecraft:stone:3
+tileType stone
+texture minecraft:blocks/stone_diorite
+
+host minecraft:stone:5
+tileType stone
+texture minecraft:blocks/stone_andesite
+
+host minecraft:dirt
+tileType ground
+hardness 0.5
+texture minecraft:blocks/dirt
+
+host minecraft:dirt:1
+tileType ground
+hardness 0.5
+texture minecraft:blocks/coarse_dirt
+
+# Strata ores cannot fall which makes sand and gravel weird as hosts
+host minecraft:sand
+tileType sand
+hardness 0.5
+texture minecraft:blocks/sand
+
+host minecraft:sand:1
+tileType sand
+hardness 0.5
+texture minecraft:blocks/red_sand
+
+host minecraft:gravel
+tileType gravel
+hardness 0.6
+texture minecraft:blocks/gravel
+
+host minecraft:sandstone
+tileType stone
+hardness 0.8
+texture minecraft:blocks/sandstone_normal
+textureUp minecraft:blocks/sandstone_top
+textureDown minecraft:blocks/sandstone_bottom
+
+host minecraft:clay
+tileType ground
+hardness 0.6
+texture minecraft:blocks/clay
+
+host minecraft:hardened_clay
+tileType stone
+hardness 1.25
+texture minecraft:blocks/hardened_clay
+
+host minecraft:netherrack
+tileType stone
+hardness 0.4
+texture minecraft:blocks/netherrack
+
+host minecraft:soul_sand
+tileType sand
+hardness 0.5
+texture minecraft:blocks/soul_sand
+
+host minecraft:end_stone
+tileType stone
+hardness 3.0
+texture minecraft:blocks/end_stone
+
+host minecraft:stained_hardened_clay
+tileType stone
+hardness 1.25
+resistance 7.0
+texture minecraft:blocks/hardened_clay_stained_white
+
+host minecraft:stained_hardened_clay:1
+tileType stone
+hardness 1.25
+resistance 7.0
+texture minecraft:blocks/hardened_clay_stained_orange
+
+host minecraft:stained_hardened_clay:2
+tileType stone
+hardness 1.25
+resistance 7.0
+texture minecraft:blocks/hardened_clay_stained_magenta
+
+host minecraft:stained_hardened_clay:3
+tileType stone
+hardness 1.25
+resistance 7.0
+texture minecraft:blocks/hardened_clay_stained_light_blue
+
+host minecraft:stained_hardened_clay:4
+tileType stone
+hardness 1.25
+resistance 7.0
+texture minecraft:blocks/hardened_clay_stained_yellow
+
+host minecraft:stained_hardened_clay:5
+tileType stone
+hardness 1.25
+resistance 7.0
+texture minecraft:blocks/hardened_clay_stained_lime
+
+host minecraft:stained_hardened_clay:6
+tileType stone
+hardness 1.25
+resistance 7.0
+texture minecraft:blocks/hardened_clay_stained_pink
+
+host minecraft:stained_hardened_clay:7
+tileType stone
+hardness 1.25
+resistance 7.0
+texture minecraft:blocks/hardened_clay_stained_gray
+
+host minecraft:stained_hardened_clay:8
+tileType stone
+hardness 1.25
+resistance 7.0
+texture minecraft:blocks/hardened_clay_stained_silver
+
+host minecraft:stained_hardened_clay:9
+tileType stone
+hardness 1.25
+resistance 7.0
+texture minecraft:blocks/hardened_clay_stained_cyan
+
+host minecraft:stained_hardened_clay:10
+tileType stone
+hardness 1.25
+resistance 7.0
+texture minecraft:blocks/hardened_clay_stained_purple
+
+host minecraft:stained_hardened_clay:11
+tileType stone
+hardness 1.25
+resistance 7.0
+texture minecraft:blocks/hardened_clay_stained_blue
+
+host minecraft:stained_hardened_clay:12
+tileType stone
+hardness 1.25
+resistance 7.0
+texture minecraft:blocks/hardened_clay_stained_brown
+
+host minecraft:stained_hardened_clay:13
+tileType stone
+hardness 1.25
+resistance 7.0
+texture minecraft:blocks/hardened_clay_stained_green
+
+host minecraft:stained_hardened_clay:14
+tileType stone
+hardness 1.25
+resistance 7.0
+texture minecraft:blocks/hardened_clay_stained_red
+
+host minecraft:stained_hardened_clay:15
+tileType stone
+hardness 1.25
+resistance 7.0
+texture minecraft:blocks/hardened_clay_stained_black
+
+host minecraft:red_sandstone
+tileType stone
+hardness 0.8
+texture minecraft:blocks/red_sandstone_normal
+textureUp minecraft:blocks/red_sandstone_top
+textureDown minecraft:blocks/red_sandstone_bottom

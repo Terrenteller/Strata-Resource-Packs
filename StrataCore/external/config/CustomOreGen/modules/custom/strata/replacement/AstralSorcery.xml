@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConfigSection>
+
+  <IfCondition condition=":=?blockExists('strata:aquamarine_ore')">
+
+    <OptionChoice name="StrataReplaceAquamarineShaleOre" default=":=false" displayState=":=if(?StrataReplaceAll, &quot;hidden&quot;, &quot;shown&quot;)" displayGroup="groupStrataReplacements">
+      <Description>Astral Sorcery</Description>
+      <DisplayName>Replace aquamarine shale?</DisplayName>
+      <Choice value="true" displayValue="Yes" />
+      <Choice value="false" displayValue="No" />
+    </OptionChoice>
+
+    <IfCondition condition=":=?StrataReplaceAll | ?StrataReplaceAquamarineShaleOre">
+      <Substitute name="AquamarineShaleOreToStrata" block="strata:aquamarine_ore">
+        <ReplacesOre block="oreAquamarine" />
+      </Substitute>
+    </IfCondition>
+
+  </IfCondition>
+
+  <IfCondition condition=":=?blockExists('strata:rock_crystal_ore')">
+
+    <OptionChoice name="StrataReplaceRockCrystalOre" default=":=false" displayState=":=if(?StrataReplaceAll, &quot;hidden&quot;, &quot;shown&quot;)" displayGroup="groupStrataReplacements">
+      <Description>Astral Sorcery</Description>
+      <DisplayName>Replace rock crystal?</DisplayName>
+      <Choice value="true" displayValue="Yes" />
+      <Choice value="false" displayValue="No" />
+    </OptionChoice>
+
+    <IfCondition condition=":=?StrataReplaceAll | ?StrataReplaceRockCrystalOre">
+      <Substitute name="RockCrystalOreToStrata" block="strata:rock_crystal_ore">
+        <ReplacesOre block="oreRockCrystal" />
+      </Substitute>
+    </IfCondition>
+
+  </IfCondition>
+
+  <IfCondition condition=":=?blockExists('strata:starmetal_ore')">
+
+    <OptionChoice name="StrataReplaceStarmetalOre" default=":=false" displayState=":=if(?StrataReplaceAll, &quot;hidden&quot;, &quot;shown&quot;)" displayGroup="groupStrataReplacements">
+      <Description>Astral Sorcery</Description>
+      <DisplayName>Replace starmetal?</DisplayName>
+      <Choice value="true" displayValue="Yes" />
+      <Choice value="false" displayValue="No" />
+    </OptionChoice>
+
+    <IfCondition condition=":=?StrataReplaceAll | ?StrataReplaceStarmetalOre">
+      <Substitute name="StarmetalOreToStrata" block="strata:starmetal_ore">
+        <ReplacesOre block="oreStarmetal" />
+      </Substitute>
+    </IfCondition>
+
+  </IfCondition>
+
+</ConfigSection>

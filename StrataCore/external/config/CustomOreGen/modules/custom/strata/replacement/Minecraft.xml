@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConfigSection>
+
+  <IfCondition condition=":=?blockExists('strata:coal_ore')">
+
+    <OptionChoice name="StrataReplaceCoalOre" default=":=false" displayState=":=if(?StrataReplaceAll, &quot;hidden&quot;, &quot;shown&quot;)" displayGroup="groupStrataReplacements">
+      <Description>Minecraft</Description>
+      <DisplayName>Replace coal?</DisplayName>
+      <Choice value="true" displayValue="Yes" />
+      <Choice value="false" displayValue="No" />
+    </OptionChoice>
+
+    <IfCondition condition=":=?StrataActive &amp; ( ?StrataReplaceAll | ?StrataReplaceCoalOre )">
+      <Substitute name="CoalToStrata" block="strata:coal_ore">
+        <ReplacesOre block="oreCoal" />
+        <ReplacesOre block="oreBlockCoal_vanilla" /> <!-- Geolosys -->
+      </Substitute>
+      <Substitute name="CoalSampleToStrata" block="strata:coal_sample">
+        <Replaces block="geolosys:ore_sample_vanilla:0" />
+      </Substitute>
+    </IfCondition>
+
+  </IfCondition>
+
+  <IfCondition condition=":=?blockExists('strata:diamond_ore')">
+
+    <OptionChoice name="StrataReplaceDiamondOre" default=":=false" displayState=":=if(?StrataReplaceAll, &quot;hidden&quot;, &quot;shown&quot;)" displayGroup="groupStrataReplacements">
+      <Description>Minecraft</Description>
+      <DisplayName>Replace diamond?</DisplayName>
+      <Choice value="true" displayValue="Yes" />
+      <Choice value="false" displayValue="No" />
+    </OptionChoice>
+
+    <IfCondition condition=":=?StrataActive &amp; ( ?StrataReplaceAll | ?StrataReplaceDiamondOre )">
+      <Substitute name="DiamondToStrata" block="strata:diamond_ore">
+        <ReplacesOre block="oreDiamond" />
+        <ReplacesOre block="oreBlockKimberlite_vanilla" /> <!-- Geolosys -->
+      </Substitute>
+      <Substitute name="DiamondSampleToStrata" block="strata:diamond_sample">
+        <Replaces block="geolosys:ore_sample_vanilla:5" />
+      </Substitute>
+    </IfCondition>
+
+  </IfCondition>
+
+  <IfCondition condition=":=?blockExists('strata:emerald_ore')">
+
+    <OptionChoice name="StrataReplaceEmeraldOre" default=":=false" displayState=":=if(?StrataReplaceAll, &quot;hidden&quot;, &quot;shown&quot;)" displayGroup="groupStrataReplacements">
+      <Description>Minecraft</Description>
+      <DisplayName>Replace emerald?</DisplayName>
+      <Choice value="true" displayValue="Yes" />
+      <Choice value="false" displayValue="No" />
+    </OptionChoice>
+
+    <IfCondition condition=":=?StrataActive &amp; ( ?StrataReplaceAll | ?StrataReplaceEmeraldOre )">
+      <Substitute name="EmeraldToStrata" block="strata:emerald_ore">
+        <ReplacesOre block="oreEmerald" />
+        <ReplacesOre block="oreBlockBeryl_vanilla" /> <!-- Geolosys -->
+      </Substitute>
+      <Substitute name="EmeraldSampleToStrata" block="strata:emerald_sample">
+        <Replaces block="geolosys:ore_sample_vanilla:6" />
+      </Substitute>
+    </IfCondition>
+
+  </IfCondition>
+
+  <IfCondition condition=":=?blockExists('strata:gold_ore')">
+
+    <OptionChoice name="StrataReplaceGoldOre" default=":=false" displayState=":=if(?StrataReplaceAll, &quot;hidden&quot;, &quot;shown&quot;)" displayGroup="groupStrataReplacements">
+      <Description>Minecraft</Description>
+      <DisplayName>Replace gold?</DisplayName>
+      <Choice value="true" displayValue="Yes" />
+      <Choice value="false" displayValue="No" />
+    </OptionChoice>
+
+    <IfCondition condition=":=?StrataActive &amp; ( ?StrataReplaceAll | ?StrataReplaceGoldOre )">
+      <Substitute name="GoldToStrata" block="strata:gold_ore">
+        <ReplacesOre block="oreGold" />
+        <ReplacesOre block="oreBlockGold_vanilla" /> <!-- Geolosys -->
+      </Substitute>
+      <Substitute name="GoldSampleToStrata" block="strata:gold_sample">
+        <Replaces block="geolosys:ore_sample_vanilla:2" />
+      </Substitute>
+    </IfCondition>
+
+  </IfCondition>
+
+  <IfCondition condition=":=?blockExists('strata:iron_ore')">
+
+    <OptionChoice name="StrataReplaceIronOre" default=":=false" displayState=":=if(?StrataReplaceAll, &quot;hidden&quot;, &quot;shown&quot;)" displayGroup="groupStrataReplacements">
+      <Description>Minecraft</Description>
+      <DisplayName>Replace iron?</DisplayName>
+      <Choice value="true" displayValue="Yes" />
+      <Choice value="false" displayValue="No" />
+    </OptionChoice>
+
+    <IfCondition condition=":=?StrataActive &amp; ( ?StrataReplaceAll | ?StrataReplaceIronOre )">
+      <Substitute name="IronToStrata" block="strata:iron_ore">
+        <Replaces block="minecraft:iron_ore" />
+        <ReplacesOre block="oreBlockHematite_vanilla" /> <!-- Geolosys -->
+      </Substitute>
+      <Substitute name="IronSampleToStrata" block="strata:iron_sample">
+        <Replaces block="geolosys:ore_sample:0" />
+      </Substitute>
+    </IfCondition>
+
+  </IfCondition>
+
+  <IfCondition condition=":=?blockExists('strata:lapis_ore')">
+
+    <OptionChoice name="StrataReplaceLapisOre" default=":=false" displayState=":=if(?StrataReplaceAll, &quot;hidden&quot;, &quot;shown&quot;)" displayGroup="groupStrataReplacements">
+      <Description>Minecraft</Description>
+      <DisplayName>Replace lapis?</DisplayName>
+      <Choice value="true" displayValue="Yes" />
+      <Choice value="false" displayValue="No" />
+    </OptionChoice>
+
+    <IfCondition condition=":=?StrataActive &amp; ( ?StrataReplaceAll | ?StrataReplaceLapisOre )">
+      <Substitute name="LapisToStrata" block="strata:lapis_ore">
+        <ReplacesOre block="oreLapis" />
+        <ReplacesOre block="oreBlockLapis_vanilla" /> <!-- Geolosys -->
+      </Substitute>
+      <Substitute name="LapisSampleToStrata" block="strata:lapis_sample">
+        <Replaces block="geolosys:ore_sample_vanilla:3" />
+      </Substitute>
+    </IfCondition>
+
+  </IfCondition>
+
+  <IfCondition condition=":=?blockExists('strata:redstone_ore')">
+
+    <OptionChoice name="StrataReplaceRedstoneOre" default=":=false" displayState=":=if(?StrataReplaceAll, &quot;hidden&quot;, &quot;shown&quot;)" displayGroup="groupStrataReplacements">
+      <Description>Minecraft</Description>
+      <DisplayName>Replace redstone?</DisplayName>
+      <Choice value="true" displayValue="Yes" />
+      <Choice value="false" displayValue="No" />
+    </OptionChoice>
+
+    <IfCondition condition=":=?StrataActive &amp; ( ?StrataReplaceAll | ?StrataReplaceRedstoneOre )">
+      <Substitute name="RedstoneToStrata" block="strata:redstone_ore">
+        <ReplacesOre block="oreRedstone" />
+        <ReplacesOre block="oreBlockCinnabar_vanilla" /> <!-- Geolosys -->
+      </Substitute>
+      <Substitute name="RedstoneSampleToStrata" block="strata:redstone_sample">
+        <Replaces block="geolosys:ore_sample_vanilla:1" />
+      </Substitute>
+    </IfCondition>
+
+  </IfCondition>
+
+</ConfigSection>

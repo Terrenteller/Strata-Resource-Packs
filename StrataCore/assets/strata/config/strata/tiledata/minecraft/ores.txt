@@ -1,0 +1,64 @@
+ore coal
+oreDict oreCoal -
+tileType stone
+burnTime 1600
+texture strata:blocks/minecraft/coal
+oreItemTexture strata:items/ore/mask erase 100 strata:items/ore/border normal 100 strata:blocks/minecraft/coal normal 100 strata:items/ore/base
+blockState strata:proto_cube_y_overlay
+convertsTo minecraft:coal
+proxyOre minecraft:coal_ore
+
+ore diamond
+oreDict oreDiamond gemDiamond
+tileType stone
+texture strata:blocks/minecraft/diamond
+oreItemTexture strata:items/ore/mask erase 100 strata:items/ore/border normal 100 strata:blocks/minecraft/diamond normal 100 strata:items/ore/base
+blockState strata:proto_cube_y_overlay
+convertsTo minecraft:diamond
+proxyOre minecraft:diamond_ore
+
+ore emerald
+oreDict oreEmerald gemEmerald
+tileType stone
+texture strata:blocks/minecraft/emerald
+oreItemTexture strata:items/ore/mask erase 100 strata:items/ore/border normal 100 strata:blocks/minecraft/emerald normal 100 strata:items/ore/base
+blockState strata:proto_cube_y_overlay
+convertsTo minecraft:emerald
+proxyOre minecraft:emerald_ore
+
+ore gold
+oreDict oreGold
+tileType stone
+texture strata:blocks/minecraft/gold
+oreItemTexture strata:items/ore/mask erase 100 strata:items/ore/border normal 100 strata:blocks/minecraft/gold normal 100 strata:items/ore/base
+blockState strata:proto_cube_y_overlay
+convertsTo minecraft:gold_ore
+proxyOre minecraft:gold_ore
+
+ore iron
+oreDict oreIron
+tileType stone
+texture strata:blocks/minecraft/iron
+oreItemTexture strata:items/ore/mask erase 100 strata:items/ore/border normal 100 strata:blocks/minecraft/iron normal 100 strata:items/ore/base
+blockState strata:proto_cube_y_overlay
+convertsTo minecraft:iron_ore
+proxyOre minecraft:iron_ore
+
+ore lapis
+oreDict oreLapis gemLapis
+tileType stone
+texture strata:blocks/minecraft/lapis
+oreItemTexture strata:items/ore/mask erase 100 strata:items/ore/border normal 100 strata:blocks/minecraft/lapis normal 100 strata:items/ore/base
+blockState strata:proto_cube_y_overlay
+convertsTo minecraft:dye:4
+proxyOre minecraft:lapis_ore
+
+ore redstone
+oreDict oreRedstone dustRedstone
+tileType stone
+texture strata:blocks/minecraft/redstone
+oreItemTexture strata:items/ore/mask erase 100 strata:items/ore/border normal 100 strata:blocks/minecraft/redstone normal 100 strata:items/ore/base
+blockState strata:proto_cube_y_overlay
+convertsTo minecraft:redstone
+proxyOre minecraft:redstone_ore
+activatable

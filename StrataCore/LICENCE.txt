@@ -1,0 +1,17 @@
+Original "Applied Energistics 2" assets are licensed under CC BY-NC-SA 3.0 by "AlgorithmX2 et al".
+Remixed assets remain licensed under CC BY-NC-SA 3.0.
+
+Changes:
+- Removed stone background from certus quartz ore block textures
+
+================================================================================
+
+Remixed "Minecraft" assets constitute derivative works of Minecraft, owned by Mojang, a subsidiary of Microsoft.
+These derivatives are used without explicit permission, without ill intent, and remain property of Mojang.
+Redistribution of this content is understood to be acceptable per Mojang's
+'EXTENDED FUNCTIONALITY AND “MODS”' subsection of their Commercial Usage Guidelines.
+NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG.
+
+Changes:
+- Removed stone background from ore block textures
+- Created the resource pack thumbnail image from the diamond ore texture

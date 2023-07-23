@@ -1,0 +1,1 @@
+StrataCore is the "Stratification" of vanilla Minecraft and miscellaneous other mods. We rely on CustomOreGen to put our blocks into the world. If you choose to use CustomOreGen and want these options, copy "./external/config/CustomOreGen/modules/custom/" to "<game>/config/CustomOreGen/modules/custom/".
